@@ -1,4 +1,4 @@
-// src/app/providers.js
+// providers.js
 'use client'; // This ensures that Provider runs on the client side
 
 import { Provider } from 'react-redux';
