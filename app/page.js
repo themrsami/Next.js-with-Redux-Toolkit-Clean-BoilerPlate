@@ -18,16 +18,16 @@ const Counter = () => {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
-      <div className="shadow-2xl p-10 rounded-lg bg-white">
+      <div className="shadow-2xl flex flex-col gap-8 justify-center items-center p-10 rounded-lg bg-white">
         <button 
-          className="bg-blue-600 text-white px-6 py-3 rounded-full shadow-lg mb-6 transform transition-transform hover:scale-105 active:scale-95" 
+          className="bg-slate-900 rounded-md w-40 py-1 px-4 text-white" 
           onClick={() => dispatch(increment())}
         >
           +
         </button>
-        <span className="text-4xl font-bold mb-6 text-gray-800">{count}</span>
+        <span className="text-4xl font-bold text-gray-800">{count}</span>
         <button 
-          className="bg-red-600 text-white px-6 py-3 rounded-full shadow-lg transform transition-transform hover:scale-105 active:scale-95" 
+          className="bg-slate-900 rounded-md w-40 py-1 px-4 text-white" 
           onClick={() => dispatch(decrement())}
         >
           -
